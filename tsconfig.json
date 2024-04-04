@@ -1,25 +1,23 @@
 {
-  "compilerOptions": {
-    "target": "ES5",
-    "allowUnreachableCode": false,
-    "exactOptionalPropertyTypes": true,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitThis": true,
-    "noUnusedLocals": true,
-    "noImplicitReturns": true,
-    "alwaysStrict": true,
-    "strictFunctionTypes": true,
-    "strictBindCallApply": true,
-    "strictNullChecks": true,
-    "strictPropertyInitialization": true,
-    "jsx": "react",
-    "esModuleInterop": true,
-    "allowJs": true,
-    "checkJs": true,
-    "isolatedModules": true
-  },
-  "include": ["src/**/**/*"],
-  "exclude": ["node_modules"]
+    "compilerOptions": {
+        "target": "ES5", // Specifies the ECMAScript target version for the compiled output
+        "allowUnreachableCode": false, // Disallows unreachable code within functions
+        "exactOptionalPropertyTypes": true, // Ensures that optional properties in objects are checked for type correctness
+        "noFallthroughCasesInSwitch": true, // Requires explicit handling of all cases in switch statements
+        "noImplicitThis": true, // Disallows the use of `this` in a context where the type is `any`
+        "noUnusedLocals": true, // Reports errors on unused local variables
+        "noImplicitReturns": true, // Ensures that all code paths in a function return a value
+        "alwaysStrict": true, // Enables strict mode semantics in all code
+        "strictFunctionTypes": true, // Enables stricter checking of function types
+        "strictBindCallApply": true, // Enables stricter checking of `bind`, `call`, and `apply` methods on functions
+        "strictNullChecks": true, // Enables strict null checks, which help catch common errors regarding null and undefined values
+        "strictPropertyInitialization": true, // Requires explicit initialization for all class properties
+        "jsx":"react", // Specifies the JSX factory function to use when targeting React JSX emit
+        "esModuleInterop": true, // Enables compatibility with commonJS modules using `import` and `export`
+        "allowJs": true, // Allows JavaScript files to be included in TypeScript projects
+        "checkJs": true, // Enables type checking of JavaScript files
+        "isolatedModules": true // Disallows module augmentation, meaning that each file is treated as a separate module
+    },
+    "include": ["src/**/**/*"], // Specifies which files to include in the compilation process
+    "exclude": ["node_modules"] // Specifies which files to exclude from the compilation process
 }
-
-// hey
