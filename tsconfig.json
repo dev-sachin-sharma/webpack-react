@@ -1,24 +1,25 @@
 {
-    "compilerOptions": {
-        "allowUnreachableCode": false,
-        "exactOptionalPropertyTypes": true,
-        "noFallthroughCasesInSwitch": true,
-        "noImplicitThis": true,
-        "noUnusedLocals": true,
-        "noImplicitReturns": true,
-        "alwaysStrict": true,
-        "strictFunctionTypes": true,
-        "strictBindCallApply": true,
-        "strictNullChecks": true,
-        "strictPropertyInitialization": true,
-        "jsx":"react",
-        "esModuleInterop": true,
-        "allowJs": true,
-        "checkJs": true,
-        "isolatedModules": true
-    },
-    "include": ["src/**/**/*"],
-    "exclude": ["node_modules"]
+  "compilerOptions": {
+    "target": "ES5",
+    "allowUnreachableCode": false,
+    "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noImplicitReturns": true,
+    "alwaysStrict": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "jsx": "react",
+    "esModuleInterop": true,
+    "allowJs": true,
+    "checkJs": true,
+    "isolatedModules": true
+  },
+  "include": ["src/**/**/*"],
+  "exclude": ["node_modules"]
 }
 
 // hey

@@ -8,6 +8,7 @@ module.exports = [
         entry:"./src/index.tsx",
         mode:"development",
         target:"web",
+        devtool: 'inline-source-map',
         output:{
             path:path.resolve(__dirname,"dist/"),
             filename:"bundle.js"
