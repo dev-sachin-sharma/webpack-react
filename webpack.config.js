@@ -1,13 +1,18 @@
 const path = require('path'); // Importing Node.js path module
 
 const HtmlWebpackPlugin = require('html-webpack-plugin'); // Importing HtmlWebpackPlugin
+const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 
 module.exports = [
     {
         entry: "./src/index.tsx", // Entry point of your application
         mode: "development", // Webpack mode set to development
         target: "web", // Target environment set to web
-        devtool: 'inline-source-map', // Source mapping for debugging
+        devtool: 'inline-source-map', // Source mapping for debugging,
+        devServer:{
+            hot:true,
+            open:true
+        },
         output: {
             path: path.resolve(__dirname, "dist/"), // Output directory path
             filename: "bundle.js" // Output bundle file name
@@ -15,7 +20,8 @@ module.exports = [
         plugins: [
             new HtmlWebpackPlugin({
                 template: './public/index.html' // HtmlWebpackPlugin configuration
-            })
+            }),
+            new ReactRefreshWebpackPlugin()
         ],
         resolve: {
             extensions: [".js", ".ts", ".tsx", ".jsx"], // File extensions to resolve
